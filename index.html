@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="memory-card-game.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Memorization Card Game</h1>
+    </header>
+    <div id="instructions-container">
+      <div id="instructions">
+        <h2>How to Play</h2>
+        <p>Click on a card to flip it over.</p>
+        <p>Match all pairs to win the game.</p>
+        <p>Each correct match adds 10 points to your score.</p>
+        <p>An incorrect match reduces your points by 5.</p>
+        <p>
+          Use the arrow keys to navigate between cards and Enter to select a
+          card.
+        </p>
+      </div>
+    </div>
+    <div id="game-container">
+      <div id="game-board"></div>
+    </div>
+    <div id="score-board">
+      <h2>Score: <span id="score">0</span></h2>
+      <h2>Matches Found: <span id="matches">0</span></h2>
+    </div>
+    <footer>
+      <p>&copy; 2024 Game Arcade. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
