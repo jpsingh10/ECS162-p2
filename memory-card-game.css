@@ -1,5 +1,4 @@
 body {
-  background-color: #d5e0e5;
   font-family: "Nunito", sans-serif;
   font-size: 20px;
   margin: 0;
@@ -12,40 +11,82 @@ body {
   height: 100vh;
 }
 
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
 h1 {
   text-align: center;
+  color: whitesmoke;
+}
+
+#score-board {
+  text-align: right;
+  margin-left: 50px;
+  background: rgba(255, 153, 153, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 5px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+#score-board h2 {
+  color: whitesmoke;
+  font-size: 20px;
+  margin: 5px;
 }
 
 #instructions-container {
+  background: rgba(255, 153, 153, 0.2);
+  backdrop-filter: blur(10px);
   position: absolute;
-  top: 400px;
+  top: 300px;
   left: 10px;
   width: 350px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 #instructions {
   padding: 20px;
-  background-color: #f9f9f9;
+  background-color: transparent;
+  color: whitesmoke;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #game-container {
+  background: linear-gradient(
+    to bottom right,
+    #0e0219,
+    #7a243d,
+    #b23235,
+    #cc6200
+  );
+
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: center - 5%;
   width: 100%;
 }
 
 #game-board {
+  background: rgba(255, 153, 153, 0.5);
+  backdrop-filter: blur(10px);
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   align-content: space-around;
   width: 820px;
   max-width: 100%;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .card {
@@ -53,7 +94,8 @@ h1 {
   height: 260px;
   margin: 5px;
   cursor: pointer;
-  background-color: white;
+  background: rgba(255, 153, 153, 0.5);
+  backdrop-filter: blur(10px);
   background-image: url("./cards/cover.png");
   background-size: contain;
   background-position: center;
@@ -64,20 +106,6 @@ h1 {
     0 10px 30px 10px rgba(0, 0, 0, 0.25);
 }
 
-#score-board {
-  /* background-color: #f9f9f9; */
-  position: fixed;
-  bottom: 30px;
-  right: 20px;
-  text-align: right;
-}
-
-#score-board h2 {
-  color: #333;
-  font-size: 24px;
-  margin: 5px;
-}
-
 footer {
   display: flex;
   justify-content: center;
@@ -86,7 +114,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 40px; /* Increased height for better visual */
+  height: 40px;
   text-align: center;
   color: #333;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
@@ -104,8 +132,8 @@ footer {
     display: none;
   }
 
-  #game-board {
-    width: 100%;
+  #game-container {
+    justify-content: center;
   }
 
   .card {

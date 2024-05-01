@@ -8,9 +8,6 @@
     />
   </head>
   <body>
-    <header>
-      <h1>Memorization Card Game</h1>
-    </header>
     <div id="instructions-container">
       <div id="instructions">
         <h2>How to Play</h2>
@@ -25,11 +22,15 @@
       </div>
     </div>
     <div id="game-container">
+      <header>
+        <h1>Memorization Card Game</h1>
+        <div id="score-board">
+          <h2>Score: <span id="score">0</span></h2>
+          <h2>Matches Found: <span id="matches">0</span></h2>
+          <h2>Time Left: <span id="time">60</span> seconds</h2>
+        </div>
+      </header>
       <div id="game-board"></div>
-    </div>
-    <div id="score-board">
-      <h2>Score: <span id="score">0</span></h2>
-      <h2>Matches Found: <span id="matches">0</span></h2>
     </div>
     <footer>
       <p>&copy; 2024 Game Arcade. All rights reserved.</p>
