@@ -1,1 +1,1 @@
-# ECS161-p2
+Run the index.html in '/arcade' to start.
