@@ -13,10 +13,25 @@ body {
   font-size: 25px;
 }
 
-header {
+header a {
   color: whitesmoke;
   text-align: center;
   padding: 20px;
+}
+
+#back-button {
+  position: absolute;
+  top: 7.5px;
+  left: 7.5px;
+  padding: 7.5px 15px;
+  background: rgba(255, 153, 153, 0.2);
+  backdrop-filter: blur(10px);
+  color: whitesmoke;
+  text-decoration: none;
+  border-radius: 5px;
+}
+#back-button:hover {
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .thumbnail-container {
@@ -44,29 +59,65 @@ header {
   margin-top: 8px;
 }
 
+.game-description {
+  display: none;
+  color: whitesmoke;
+  text-align: center;
+  background: rgba(255, 153, 153, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 10px;
+  border-radius: 8px;
+  position: absolute;
+  width: 280px;
+  margin-top: 20px;
+}
+
+.thumbnail-container a:hover .caption {
+  display: none;
+}
+.thumbnail-container a:hover .game-description {
+  display: block;
+}
+
+.thumbnail-container a:hover img {
+  border: 3px solid #b23235;
+}
+
 .thumbnail-container a:hover img {
   border: 3px solid #ddd;
   border-color: #b23235;
 }
 
+.text-background {
+  background: rgba(255, 153, 153, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 20px;
+  border-radius: 10px;
+  color: whitesmoke;
+}
+
 footer {
   font-size: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 40px;
+  height: auto;
   text-align: center;
   color: #070707;
+  padding: 10px 0;
 }
 
 @media (max-width: 768px) {
   .thumbnail-container {
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
   }
 
   .thumbnail-container img {
