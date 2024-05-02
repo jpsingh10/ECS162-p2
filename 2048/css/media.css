@@ -1,4 +1,4 @@
-@media screen and (max-width:1250px){
+/* @media screen and (max-width:1250px){
     html,body{
         font-size: 15px;
     }
@@ -53,10 +53,14 @@
         font-size: 30px;
     }
 }
-
+ */
 
 @media screen and (max-width:768px) {
     .game-container {
         margin-top: 50px;
+    }
+
+    .container{
+        margin-top: 100px;  
     }
 }

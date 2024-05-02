@@ -34,7 +34,7 @@ header {
 .thumbnail-container img {
   width: 300px;
   height: auto;
-  border: 3px solid #ddd;
+  border: 1px solid #ddd;
   border-radius: 8px;
   transition: border-color 0.3s, filter 0.3s;
 }
@@ -45,7 +45,22 @@ header {
 }
 
 .thumbnail-container a:hover img {
+  border: 3px solid #ddd;
   border-color: #b23235;
+}
+
+footer {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  color: #070707;
 }
 
 @media (max-width: 768px) {
@@ -54,7 +69,8 @@ header {
     align-items: center; 
   }
 
-  .thumbnail-container a {
-    width: 80%;
+  .thumbnail-container img {
+    width: 200px;
+    height: 80%;
   }
 }
