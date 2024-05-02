@@ -47,3 +47,14 @@ header {
 .thumbnail-container a:hover img {
   border-color: #b23235;
 }
+
+@media (max-width: 768px) {
+  .thumbnail-container {
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .thumbnail-container a {
+    width: 80%;
+  }
+}
