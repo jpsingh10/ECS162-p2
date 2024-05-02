@@ -53,3 +53,10 @@
         font-size: 30px;
     }
 }
+
+
+@media screen and (max-width:768px) {
+    .game-container {
+        margin-top: 50px;
+    }
+}
