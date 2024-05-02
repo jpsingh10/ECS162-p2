@@ -1,0 +1,19 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+body {
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+
+    
+}
+canvas {
+    border: 2px solid grey;
+}
+

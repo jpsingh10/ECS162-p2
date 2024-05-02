@@ -7,7 +7,7 @@ let cardElements = [];
 let score = 0;
 let matchesFound = 0;
 let flippedCards = [];
-let timeLeft = 60;
+let timeLeft;
 let timer;
 
 initializeGame();
@@ -111,6 +111,7 @@ function cardClick() {
 }
 
 function startTimer() {
+    timeLeft = 60; 
     timer = setInterval(() => {
         timeLeft--;
         document.getElementById('time').textContent = timeLeft;
@@ -125,8 +126,12 @@ function updateScoreBoard() {
     document.getElementById('matches').textContent = matchesFound;
 }
 
+
+function endGame() {}
+
 function resetGame() {
     clearInterval(timer);
+    timeLeft = 60; 
     score = 0;
     matchesFound = 0;
     flippedCards = [];
