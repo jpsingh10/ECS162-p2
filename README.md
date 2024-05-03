@@ -28,6 +28,7 @@ The website is organized into the following main directories:
      - `index.html` - The main HTML document for the arcade's front page.
      - 'about.html' - The HTML document for the about page.
      - `style.css` - CSS file for styling the front page.
+     - `/images` - containes all of the image assests
 
 2. **Run Rabbit Run**
 
@@ -36,6 +37,8 @@ The website is organized into the following main directories:
      - `index.html` - The main HTML document for the game.
      - `run-rabbit-run.css` - CSS file for styling the game's interface.
      - `run-rabbit-run.js` - JavaScript file containing the game's logic.
+     - `/img` - containes all of the image assests
+
 
 3. **Memory Card Game**
 
@@ -44,6 +47,8 @@ The website is organized into the following main directories:
      - `index.html` - The main HTML document for the game.
      - `memory-card-game.css` - CSS file for styling the game's interface.
      - `memory-card-game-script.js` - JavaScript file containing the game's logic.
+     - `/cards` - containes all of the card image assests
+
 
 4. **2048**
 
