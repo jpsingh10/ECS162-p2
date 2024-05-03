@@ -1,4 +1,4 @@
-# Kids Game Arcade Website Documentation
+# Kids Arcade Website Documentation
 
 ## Overview
 
