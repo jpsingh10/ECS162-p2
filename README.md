@@ -51,11 +51,11 @@ The website is organized into the following main directories:
    - **Contents**:
      - `index.html` - The main HTML document for the game.
      - `/css` - CSS files for styling the game's interface.
-       Changes were made `style.css` to match the styles and
-       keep it consistent with our the other games.
+       Changes were made to `style.css` to match the styles and
+       keep them consistent with the other games.
      - `/js` - JavaScript files containing the game's logic, adapted from an
-       open-source version. changes the `game.js` and `view.js` modules and the
-       changes made can found at the top of the respestive files.
+       open-source version. Changes to the `game.js` and `view.js` modules can be
+       found at the top of the respective files.
 
 ## How to Run
 
